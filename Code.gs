@@ -55,3 +55,6 @@ function doPost(e){
   }catch(err){return out({ok:0,err:String(err)});}
   finally{lock.releaseLock();}
 }
+
+// Jalankan fungsi ini SEKALI dari editor: memberi izin akses & membuat semua sheet
+function setup(){Object.keys(T).forEach(sh);Logger.log('Selesai: semua sheet dibuat');}
